@@ -1,4 +1,4 @@
-プロジェクトを作成する
+新規でプロジェクトを作成する
 ```bash
 yarn create next-app --example with-tailwindcss nextjs-trpc-crud-app
 # or
