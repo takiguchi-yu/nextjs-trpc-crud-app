@@ -371,3 +371,11 @@ pnpm install tailwind-merge react-toastify react-hook-form date-fns @hookform/re
 - react-hook-form– フォーム検証ライブラリ
 - date-fns– JavaScript 日付ユーティリティ ライブラリ
 - @hookform/resolvers– 外部検証ライブラリを使用できるようにする React-Hook-Form リゾルバ。
+
+# sqlite から postgresql に変更する
+
+prisma/migration/と dev.db を削除したら以下のコマンドを実行する
+
+```
+npx prisma migrate dev --name "changed-sqlite-to-postgres" --create-only && npx prisma generate && npx prisma db push
+```
